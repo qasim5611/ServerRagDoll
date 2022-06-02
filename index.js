@@ -165,6 +165,9 @@ app.post("/updateTokenomics", upload.single("image"), SiteTokenomics.updateToken
 app.get("/gettockenomicsByid", SiteTokenomics.gettockenomicsByid);
 
 
+
+
+///////////////////////////////////////
 app.use(express.static("./build"));
 
 app.use("*", (req, res) => {

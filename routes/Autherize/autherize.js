@@ -221,6 +221,8 @@ const Auth = {
         });
       }
 
+      //////////////////////////////////
+
       await userModel.updateOne(
         {
           email: email,

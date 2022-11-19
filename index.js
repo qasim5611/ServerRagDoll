@@ -170,8 +170,8 @@ app.get("/gettockenomicsByid", SiteTokenomics.gettockenomicsByid);
 ///////////////////////////////////////
 app.use(express.static("./build"));
 
-app.use("*", (req, res) => {
-  res.sendfile("./build/index.html");
+app.use("/", (req, res) => {
+  res.send("OK");
 });
 
 connectDatabase();
